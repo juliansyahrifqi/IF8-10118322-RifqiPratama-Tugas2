@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  * @author oyeaaa
  */
 public class praktikum_3_3 extends javax.swing.JFrame {
-
+    
     /**
      * Creates new form praktikum_3_3
      */
@@ -147,6 +147,10 @@ public class praktikum_3_3 extends javax.swing.JFrame {
 
     private void tblTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tblTambahActionPerformed
         if(tblTambah.getText().equals("Tambah")) {
+            txtnim.setText("");
+            txtnama.setText("");
+            txtkelas.setText("");
+            
             tblTambah.setText("Simpan");
             tblTambah.setMnemonic('S');
             tblEdit.setText("Batal");
@@ -154,7 +158,7 @@ public class praktikum_3_3 extends javax.swing.JFrame {
             tblExit.setEnabled(false);
             txtnim.setEnabled(true);
             txtnama.setEnabled(true);
-            txtkelas.setEnabled(true);
+            txtkelas.setEnabled(true);    
         } else {
               JOptionPane.showMessageDialog(null, "Menyimpan data NIM '" + txtnim.getText() + "' Nama '" + txtnama.getText() + " "
                     + txtkelas.getText() + "'");
@@ -203,12 +207,12 @@ public class praktikum_3_3 extends javax.swing.JFrame {
             txtnim.setEnabled(false);
             txtnama.setEnabled(false);
             txtkelas.setEnabled(false);
-            tblTambah.requestFocus();    
+            tblTambah.requestFocus();     
             
             txtnim.setText("");
             txtnama.setText("");
             txtkelas.setText("");
-       }
+       }       
     }//GEN-LAST:event_tblEditActionPerformed
 
     /**
